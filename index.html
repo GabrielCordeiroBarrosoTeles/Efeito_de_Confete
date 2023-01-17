@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Efeito de Confete</title>
+</head>
+<body>
+    <p style="text-align: center;">Feliz aniversário NOME</p>
+    <script src="js/confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 é o tempo que após 1 segundo inicia o confete ( 1000 = 1 seg)
+        };
+
+        //  Pare
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 é o tempo que depois de 5 segundos para o confete (5000 = 5 segundos)
+        };
+
+        start();
+        stop();
+    </script>
+</body>
+</html>
